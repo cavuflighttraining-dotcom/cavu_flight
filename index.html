@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAVU Flight Training</title>
+    <style>
+        /* CSS Reset and Base Styles */
+        * { box-sizing: border-box; }
+        body, h1, h2, h3, p, ul, li { margin: 0; padding: 0; font-family: 'Helvetica Neue', Arial, sans-serif; }
+        body { color: #333; line-height: 1.6; background-color: #f4f7f6; }
+        
+        /* Header & Navigation */
+        header { background-color: #003366; color: #fff; padding: 2.5rem 1rem; text-align: center; }
+        header h1 { font-size: 2.5rem; letter-spacing: 1px; }
+        
+        nav { background: #002244; display: flex; justify-content: center; position: sticky; top: 0; z-index: 1000; flex-wrap: wrap; }
+        nav a { color: #fff; text-decoration: none; padding: 1rem 1.5rem; text-transform: uppercase; font-weight: bold; font-size: 0.9rem; transition: background 0.3s; }
+        nav a:hover { background: #00509e; }
+        
+        /* Main Container & Sections */
+        .container { max-width: 900px; margin: 2rem auto; padding: 0 2rem; background: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.05); border-radius: 8px; }
+        section { padding: 3rem 0; border-bottom: 1px solid #eee; }
+        section:last-child { border-bottom: none; }
+        h2 { color: #003366; margin-bottom: 1.5rem; font-size: 2rem; }
+        h3 { color: #00509e; margin: 1.5rem 0 0.5rem 0; font-size: 1.3rem; }
+        p { margin-bottom: 1rem; }
+        ul.list { margin-left: 2rem; margin-bottom: 1rem; }
+        ul.list li { margin-bottom: 0.5rem; }
+        
+        /* Contact Form */
+        form { display: flex; flex-direction: column; gap: 1rem; max-width: 600px; background: #f9f9f9; padding: 2rem; border-radius: 8px; border: 1px solid #e0e0e0; }
+        label { font-weight: bold; color: #002244; }
+        input, textarea { padding: 0.8rem; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; width: 100%; }
+        textarea { resize: vertical; min-height: 120px; }
+        button { padding: 1rem; background-color: #003366; color: #fff; border: none; font-size: 1rem; cursor: pointer; border-radius: 4px; font-weight: bold; transition: background 0.3s; }
+        button:hover { background-color: #00509e; }
+
+        /* Footer */
+        footer { text-align: center; padding: 2rem; background: #002244; color: #aaa; font-size: 0.9rem; }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            nav a { padding: 0.8rem 1rem; font-size: 0.8rem; }
+            .container { margin: 1rem; padding: 0 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CAVU Flight Training</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#pricing">Services & Pricing</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        
+        <!-- About Page -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to <strong>CAVU Flight Training</strong>. As a dedicated flight instructor, my mission is to help you achieve your aviation goals safely and efficiently, whether you're taking your very first discovery flight or looking to add new ratings to your license.</p>
+            <p>We specialize in <strong>Single-Engine Airplanes</strong> and <strong>Gliders</strong>. To provide flexibility and convenience, we actively fly out of several premier airports in Maine:</p>
+            <ul class="list">
+                <li>Portland (PWM)</li>
+                <li>Lewiston (LEW)</li>
+                <li>Brunswick (BXM)</li>
+                <li>Biddeford (SFM)</li>
+                <li>Sanford (SFM)</li>
+            </ul>
+        </section>
+
+        <!-- Services & Pricing Page -->
+        <section id="pricing">
+            <h2>Services & Pricing</h2>
+            <p>We accept a variety of payment methods including <strong>Credit Cards, PayPal, and Bitcoin (BTC)</strong>.</p>
+            
+            <h3>Flight Instruction</h3>
+            <ul class="list">
+                <li>Primary Flight Training (Private Pilot)</li>
+                <li>Instrument Rating</li>
+                <li>Glider Instruction</li>
+            </ul>
+            
+            <h3>Scenic Flight Tours</h3>
+            <p>Experience the beauty of Maine from above. Perfect for gifts, romantic dates, or just for fun!</p>
+            <ul class="list">
+                <li>Casco Bay & Portland Head Light</li>
+                <li>Sebago Lake Region</li>
+                <li>Old Orchard Beach & Southern Maine Coastline</li>
+                <li>Fort Gourges</li>
+                <li>Bailey Island & Midcoast Maine</li>
+            </ul>
+
+            <h3>Aerial Services</h3>
+            <p>Piloting for your specific mission requirements:</p>
+            <ul class="list">
+                <li>Aerial Photography</li>
+                <li>News Reporting Flights</li>
+                <li>Land Surveying</li>
+            </ul>
+        </section>
+
+        <!-- Schedule Page -->
+        <section id="schedule">
+            <h2>Schedule a Flight</h2>
+            <p>Aviation requires a bit of flexibility, but we work hard to fit instruction into your busy life. We offer both weekday and weekend availability, weather permitting.</p>
+            <p>To request a booking for a lesson, tour, or flight, please fill out the contact form below with your preferred dates. We will get back to you promptly to confirm our schedule and coordinate the departure airport.</p>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Ready to get flying? Fill out the form below to email me directly at <strong>cavuflighttraining@gmail.com</strong>.</p>
+            
+            <form action="mailto:cavuflighttraining@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="Name" required placeholder="Your Name">
+
+                <label for="contactInfo">Contact Phone or Email:</label>
+                <input type="text" id="contactInfo" name="Contact_Info" required placeholder="How should we reach you?">
+
+                <label for="dates">Preferred Dates (Optional):</label>
+                <input type="text" id="dates" name="Preferred_Dates" placeholder="e.g., Weekends, Next Tuesday, etc.">
+
+                <label for="message">Message / Inquiry (Optional):</label>
+                <textarea id="message" name="Message" placeholder="Tell me about your flight goals or the services you need..."></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CAVU Flight Training. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
