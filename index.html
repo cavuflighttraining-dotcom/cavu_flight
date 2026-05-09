@@ -8,18 +8,26 @@
         /* CSS Reset and Base Styles */
         * { box-sizing: border-box; }
         body, h1, h2, h3, p, ul, li { margin: 0; padding: 0; font-family: 'Helvetica Neue', Arial, sans-serif; }
-        body { color: #333; line-height: 1.6; background-color: #f4f7f6; }
+        body { 
+            color: #333; 
+            line-height: 1.6; 
+            background-image: url('aviation-chart-bg.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
         
         /* Header & Navigation */
-        header { background-color: #003366; color: #fff; padding: 2.5rem 1rem; text-align: center; }
+        header { background-color: rgba(0, 51, 102, 0.9); color: #fff; padding: 2.5rem 1rem; text-align: center; }
         header h1 { font-size: 2.5rem; letter-spacing: 1px; }
         
-        nav { background: #002244; display: flex; justify-content: center; position: sticky; top: 0; z-index: 1000; flex-wrap: wrap; }
+        nav { background: rgba(0, 34, 68, 0.95); display: flex; justify-content: center; position: sticky; top: 0; z-index: 1000; flex-wrap: wrap; }
         nav a { color: #fff; text-decoration: none; padding: 1rem 1.5rem; text-transform: uppercase; font-weight: bold; font-size: 0.9rem; transition: background 0.3s; }
         nav a:hover { background: #00509e; }
         
         /* Main Container & Sections */
-        .container { max-width: 900px; margin: 2rem auto; padding: 0 2rem; background: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.05); border-radius: 8px; }
+        .container { max-width: 900px; margin: 2rem auto; padding: 0 2rem; background: rgba(255, 255, 255, 0.95); box-shadow: 0 0 20px rgba(0,0,0,0.3); border-radius: 8px; }
         section { padding: 3rem 0; border-bottom: 1px solid #eee; }
         section:last-child { border-bottom: none; }
         h2 { color: #003366; margin-bottom: 1.5rem; font-size: 2rem; }
@@ -37,7 +45,7 @@
         button:hover { background-color: #00509e; }
 
         /* Footer */
-        footer { text-align: center; padding: 2rem; background: #002244; color: #aaa; font-size: 0.9rem; }
+        footer { text-align: center; padding: 2rem; background: rgba(0, 34, 68, 0.95); color: #aaa; font-size: 0.9rem; }
         
         /* Mobile Responsiveness */
         @media (max-width: 600px) {
