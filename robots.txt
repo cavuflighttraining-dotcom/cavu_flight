@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cavuflighttraining-dotcom.github.io/cavu_flight/sitemap.xml
+
+# Disallow specific files/folders if needed
+# Disallow: /admin/
+# Disallow: /private/
