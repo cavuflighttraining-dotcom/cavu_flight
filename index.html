@@ -25,7 +25,14 @@
         <section id="about">
             <h2>About Us</h2>
             <p>Welcome to <strong>CAVU Flight Training</strong>. As a dedicated flight instructor, my mission is to help you achieve your aviation goals safely and efficiently, whether you're taking your very first discovery flight or looking to add new ratings to your license.</p>
-            <p>We specialize in <strong>Single-Engine Airplanes</strong>. We are located at Portland Jetport (PWM), Portland Maine.</p>
+            <p>We specialize in <strong>Single-Engine Airplanes</strong> and <strong>Gliders</strong>. To provide flexibility and convenience, we actively fly out of several premier airports in Maine:</p>
+            <ul class="list">
+                <li><a href="https://www.google.com/maps/place/Portland+International+Jetport/@43.6461,-70.3091,15z/data=!4m6!3m5!1s0x4cb29c5e5e5e5e5d:0x5e5e5e5e5e5e5e5e!8m2!3d43.6461!4d-70.3091!16s%2Fm%2F0b9x7" target="_blank" rel="noopener noreferrer">Portland (PWM)</a></li>
+                <li>Lewiston (LEW)</li>
+                <li>Brunswick (BXM)</li>
+                <li>Biddeford (SFM)</li>
+                <li>Sanford (SFM)</li>
+            </ul>
         </section>
 
         <!-- Services & Pricing Page -->
@@ -69,20 +76,23 @@
         <!-- Contact Page -->
         <section id="contact">
             <h2>Contact Us</h2>
-            <p>Ready to get flying? Fill out the form below to email me directly at <strong>cavuflighttraining@gmail.com</strong>.</p>
+            <p>Ready to get flying? Fill out the form below and we'll get back to you promptly!</p>
             
-            <form action="mailto:cavuflighttraining@gmail.com" method="post" enctype="text/plain">
+            <form action="https://formspree.io/f/maqvlozo" method="POST">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="Name" required placeholder="Your Name">
+                <input type="text" id="name" name="name" required placeholder="Your Name">
 
-                <label for="contactInfo">Contact Phone or Email:</label>
-                <input type="text" id="contactInfo" name="Contact_Info" required placeholder="How should we reach you?">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email Address">
+
+                <label for="phone">Contact Phone (Optional):</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
 
                 <label for="dates">Preferred Dates (Optional):</label>
-                <input type="text" id="dates" name="Preferred_Dates" placeholder="e.g., Weekends, Next Tuesday, etc.">
+                <input type="text" id="dates" name="preferred_dates" placeholder="e.g., Weekends, Next Tuesday, etc.">
 
                 <label for="message">Message / Inquiry (Optional):</label>
-                <textarea id="message" name="Message" placeholder="Tell me about your flight goals or the services you need..."></textarea>
+                <textarea id="message" name="message" placeholder="Tell me about your flight goals or the services you need..."></textarea>
 
                 <button type="submit">Send Message</button>
             </form>
